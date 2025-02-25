@@ -1,0 +1,172 @@
+.lista-consulta {
+    list-style: none;
+    padding: 0%;
+}
+
+.lista-consulta__titulo {
+    font-size: 16px;
+    color: var(--cinza);
+    margin-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+.lista-consulta__remota__container{
+    display: flex;
+    padding-left: 2.5em;
+    padding-top: 1em;
+}
+
+.lista-consulta__remota__imagem {
+    border-radius: 50%;
+    width: 2.1em;  
+    height: 2.1em;
+}
+
+.lista-consulta__remota__titulo {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--cinza);
+    margin-bottom: -0.6em;
+}
+
+.lista-consulta__remota__container-camera {
+    display: flex;
+    align-items: center;
+}
+
+.lista-consulta__remota__texto__container {
+    margin-left: 1em;
+    margin-top: -0.70em;
+}
+
+.lista-consulta__remota__camera {
+    margin-right: -1em;
+}
+
+.lista-consulta__remota__texto {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+    padding-left: 2em;
+}
+
+.lista-consulta__remota-chat {
+    padding-right: 3.3em; /* Adiciona espaçamento para manter a proporção */
+    padding-top: 0.5em;
+    margin-left: auto;
+}
+
+.lista-consulta__remota__horario {
+    font-weight: 500;
+    font-size: 12px;
+    padding-left: 3.2em;
+}
+
+.lista-consulta__remota-botoes {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.3em;
+}
+
+.lista-consulta__remota-botoes__ligar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    background: #FFB050;
+    box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
+    border-radius: 8px;
+    width: 40%;
+    height: 4em;
+}    
+
+.lista-consulta__remota-botoes__audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cinza);
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
+    border-radius: 8px;
+    width: 40%;
+    height: 4em;
+}
+
+.lista-consulta__remota-botoes__endre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    background: #4894FF;
+    box-shadow: 0px 4px 16px rgba(72, 148, 255, 0.16);
+    border-radius: 8px;
+    width: 80%;
+    height: 4em;
+}
+
+.lista-consulta__remota-final{
+    padding-bottom: 6em;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .lista-consulta {
+        display: flex;
+        flex: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .lista-consulta__titulo {
+        padding-bottom: 1em;
+    }
+
+    .lista-consulta__remota {
+        width: 50%;
+    }
+
+    .lista-consulta__remota-botoes__audio {
+        width: 42%;
+    }
+
+    .lista-consulta__remota-botoes__ligar {
+        width: 42%;
+    }
+
+    .lista-consulta__remota-botoes__endre {
+        width: 84%;
+    }
+
+    .lista-consulta__remota-final{
+        padding-bottom: 0em;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .lista-consulta__remota {
+        width: 33%;
+    }
+
+    .lista-consulta__remota__imagem {
+        padding-top: 0.25em;
+    }
+
+    .lista-consulta__remota__titulo {
+        font-size: 18px;
+    }
+    
+    .lista-consulta__remota__horario {
+        font-size: 14px;
+        margin-top: em;
+    }
+
+}

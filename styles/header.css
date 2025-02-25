@@ -1,0 +1,43 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    padding: 1em 0 0 1.5em;
+}
+
+.header__imagem {
+    border-radius: 50%;
+    width: 4.5em;  
+}
+
+.header-titulo__container {
+    margin-left: 1.5em;
+}
+
+.header__titulo {
+   color: var(--cinza);
+   font-weight: 700;
+   font-size: 22px;
+}
+
+.header__texto {
+   color: var(--cinza-claro);
+   font-weight: 400;
+   font-size: 14px;
+   margin-top: -0.8em;
+}
+
+@media screen and (min-width: 1728px) {
+
+    .header__imagem {
+        padding-top: 0.35em;
+    }
+
+    .header__titulo {
+        font-size: 31px;
+    }
+
+    .header__texto {
+        font-size: 18px;
+        margin-top: -1.2em;
+    }
+}

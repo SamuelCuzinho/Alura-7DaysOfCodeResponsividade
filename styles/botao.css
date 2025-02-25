@@ -1,0 +1,51 @@
+.mais {
+    position: fixed; /* Mudei de sticky para fixed */
+    bottom: 0; /* Adicionei esta linha para fixar o rodapé na parte inferior */
+    left: 0; /* Para garantir que o rodapé ocupe toda a largura da tela */
+    right: 0; /* Para garantir que o rodapé ocupe toda a largura da tela */
+}
+.mais__container {
+    padding-bottom: 5em;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 15px;
+    padding-right: 1.8em;
+    flex-direction: column-reverse;
+}
+
+.mais__botao {
+    background-color: var(--azul);
+    color: white;
+    font-weight: 300;
+    font-size: 21px;
+    box-shadow: 0px 4px 16px 0px var(--azul);
+    border-radius: 60%;
+    width: 2.5em;
+    height: 2.5em;
+    border: solid 2px #3C7BD4
+}
+
+.video, .local {
+    display: none;
+}
+
+.mais__botao:focus~.video {
+    display: block;
+}
+
+.mais__botao:focus~.local {
+    display: block;
+}
+
+.mais__botao:focus~.header {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .mais__botao {
+        display: none;
+    }
+
+}

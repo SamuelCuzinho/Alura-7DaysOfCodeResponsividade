@@ -1,0 +1,16 @@
+@import url("styles/header.css");
+@import url("styles/consultas.css");
+@import url("styles/rodape.css");
+@import url("styles/rodape.css");
+@import url("styles/botao.css");
+
+:root {
+    --cinza: #464646;
+    --cinza-claro: #A3A3A3;
+    --azul: #4894FF;
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: 700;
+}

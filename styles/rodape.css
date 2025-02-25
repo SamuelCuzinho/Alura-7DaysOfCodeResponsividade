@@ -1,0 +1,87 @@
+.rodape {
+    position: fixed; /* Mudei de sticky para fixed */
+    bottom: 0; /* Adicionei esta linha para fixar o rodapé na parte inferior */
+    left: 0; /* Para garantir que o rodapé ocupe toda a largura da tela */
+    right: 0; /* Para garantir que o rodapé ocupe toda a largura da tela */
+    background-color: white; /* Adicione um fundo para que o conteúdo do rodapé fique visível */
+    z-index: 1000; /* Para garantir que o rodapé fique acima de outros elementos */
+    padding-top: 0.5em;
+}
+
+.rodape__container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.rodape__botao {
+    border-width: 0;
+    text-align: center;
+    background-image: url(../imgs/Calendarioicone.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--azul);
+    padding: 2em 1em 0.5em 1em;
+    align-items: center;
+    background-color: white;
+}
+
+.botao2 {
+    color: var(--cinza);
+}
+
+.botao3 {
+    background-image: url(../imgs/clientesicone.svg);
+}
+
+.botao4 {
+    background-image: url(../imgs/relatoriosicone.svg);
+}
+
+.botao5 {
+    background-image: url(../imgs/menuicone.svg);
+}
+
+@media screen and (min-width: 1728px) {
+    
+    .rodape {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width:10%;
+        border-right: 2px solid var(--cinza-claro);
+    }
+
+    .rodape__container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-left: 1.2em;
+    }
+
+    .rodape__botao {
+        justify-content: start;
+        background-position: left;
+        padding: 1em 1em 1em 2em;
+        align-items: start;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .lista-consulta__titulo, .lista-consulta, .header  {
+        padding-left: 16em;
+    }
+
+}
+
+@media screen and (min-width: 2216px) {
+    
+    .lista-consulta__titulo, .lista-consulta, .header  {
+        padding-left: 22em;
+    }
+
+}
